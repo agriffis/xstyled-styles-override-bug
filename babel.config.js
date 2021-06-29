@@ -6,6 +6,7 @@ module.exports = api => {
       '@babel/preset-react',
       '@xstyled/babel-preset-emotion-css-prop',
     ],
+    /*
     'plugins': [
       [
         '@emotion',
@@ -21,5 +22,6 @@ module.exports = api => {
         }
       ]
     ]
+    */
   }
 }

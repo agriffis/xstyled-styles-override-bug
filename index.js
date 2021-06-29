@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import styled, { x, ThemeProvider } from '@xstyled/emotion'
+import styled, { system, ThemeProvider, x } from '@xstyled/emotion'
 
-const Box = x.div
+const InfoBox = styled.box({ backgroundColor: 'info' })
 
-const InfoBox = styled(Box)({ backgroundColor: 'info' })
-const ErrorBox = styled(Box)({ backgroundColor: 'error' })
-const SuccessBox = styled(Box)({ backgroundColor: 'success' })
+const ErrorBox = styled.div({ backgroundColor: 'error' }, system)
+
+const SuccessBox = props => <x.div backgroundColor='success' {...props} />
 
 const App = () => (
   <ThemeProvider theme={{ colors: {
